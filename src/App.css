@@ -8,7 +8,8 @@
 .home,
 .services,
 .products,
-.sign-up {
+.sign-up,
+.company  {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -18,6 +19,14 @@
 
 .services {
   background-image: url('../public/images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+.company {
+  background-image: url('../public/images/img-5.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -38,9 +38,18 @@ function Navbar() {
 			<i className={click ? 'fas fa-times' : 'fas fa-bars'} />
 		      </div>
 		      <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-			<li className='nav-item'>
+			{/* <li className='nav-item'>
 			  <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-			    Home
+			    О компании
+			  </Link>
+			</li> */}
+			<li className='nav-item'>
+			  <Link
+			    to='/company'
+			    className='nav-links'
+			    onClick={closeMobileMenu}
+			  >
+			    О компании
 			  </Link>
 			</li>
 			<li className='nav-item'>
@@ -49,7 +58,7 @@ function Navbar() {
 			    className='nav-links'
 			    onClick={closeMobileMenu}
 			  >
-			    Services
+			    Услуги
 			  </Link>
 			</li>
 			<li className='nav-item'>
@@ -58,7 +67,7 @@ function Navbar() {
 			    className='nav-links'
 			    onClick={closeMobileMenu}
 			  >
-			    Products
+			    Поиск туров
 			  </Link>
 			</li>
 	    
@@ -68,11 +77,11 @@ function Navbar() {
 			    className='nav-links-mobile'
 			    onClick={closeMobileMenu}
 			  >
-			    Sign Up
+			    Регистрация
 			  </Link>
 			</li>
 		      </ul>
-		      {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+		      {button && <Button buttonStyle='btn--outline'>РЕГИСТРАЦИЯ</Button>}
 		    </div>
 		  </nav>
 		</>
